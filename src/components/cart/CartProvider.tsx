@@ -12,7 +12,8 @@ import {
 import { PACKAGES, findPackage, type PackageId } from "@/lib/packages";
 
 // Panier persistant (localStorage) — façon boutique : on ajoute des forfaits,
-// on ajuste les quantités, puis un seul paiement Stripe pour l'ensemble.
+// on ajuste les quantités, puis un seul paiement pour l'ensemble une fois le
+// nouveau processeur de paiement intégré.
 // Le drawer latéral (CartDrawer) s'ouvre à l'ajout et via le bouton du header.
 const STORAGE_KEY = "angelikajanosikova_cart_v1";
 const MAX_QTY = 10;

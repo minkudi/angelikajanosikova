@@ -6,7 +6,7 @@ export const en: Dictionary = {
     siteName: "Angelika Jánošíková",
     tagline: "Web development & digital marketing agency",
     siteDescription:
-      "Angelika Jánošíková builds e-commerce websites, web applications and automation tools, and runs your digital marketing. Fixed-price packages, secure checkout via Stripe.",
+      "Angelika Jánošíková builds e-commerce websites, web applications and automation tools, and runs your digital marketing. Fixed-price packages, secure checkout.",
   },
 
   nav: {
@@ -30,7 +30,7 @@ export const en: Dictionary = {
     legalTitle: "Legal information",
     contactTitle: "Contact",
     addressLabel: "Address",
-    paymentsNote: "Payments secured by Stripe.",
+    paymentsNote: "Payments secured.",
     // Optional footer legal line (empty = not displayed).
     legalLine: "Angelika Jánošíková — sole proprietorship (živnosť), IČO 57 935 092, Slovakia.",
     rights: "All rights reserved.",
@@ -49,7 +49,7 @@ export const en: Dictionary = {
     clear: "Clear cart",
     total: "Total",
     checkout: "Proceed to checkout",
-    checkingOut: "Redirecting to Stripe…",
+    checkingOut: "Redirecting to checkout…",
   },
 
   whatsapp: {
@@ -111,7 +111,7 @@ export const en: Dictionary = {
     meta: {
       title: "Angelika Jánošíková — Web development & digital marketing agency",
       description:
-        "E-commerce sites, web applications, automation and digital marketing. Fixed, published prices, secure payments via Stripe, 14-day refund policy.",
+        "E-commerce sites, web applications, automation and digital marketing. Fixed, published prices, secure payments, 14-day refund policy.",
     },
     hero: {
       eyebrow: "Web development & digital marketing agency",
@@ -122,10 +122,7 @@ export const en: Dictionary = {
         "Angelika Jánošíková designs and builds e-commerce websites, custom web applications, automation tools and digital marketing campaigns. Clear packages, careful execution, secure payments.",
       ctaPrimary: "See our packages",
       ctaSecondary: "Contact us",
-      badges: [
-        "Secure payment via Stripe",
-        "14-day refund policy",
-      ],
+      badges: ["Secure payment", "14-day refund policy"],
     },
     chipsTitle: "What we master",
     chips: [
@@ -136,7 +133,7 @@ export const en: Dictionary = {
       "Online advertising",
       "SEO",
       "Social media",
-      "API & Stripe integrations",
+      "API & payment integrations",
     ],
     services: {
       eyebrow: "Our services",
@@ -280,7 +277,7 @@ export const en: Dictionary = {
     meta: {
       title: "Pricing — Fixed-price packages",
       description:
-        "Angelika Jánošíková packages: Essential Store (€1,200), Custom App (€2,200), Automated Flows (€3,800), Digital Growth (€1,800 / six months). One-time secure payment via Stripe.",
+        "Angelika Jánošíková packages: Essential Store (€1,200), Custom App (€2,200), Automated Flows (€3,800), Digital Growth (€1,800 / six months). One-time secure payment.",
     },
     hero: {
       eyebrow: "Pricing",
@@ -293,11 +290,11 @@ export const en: Dictionary = {
     periodSemestrial: "six-month package",
     guarantee: {
       title: "Money-back guarantee — 14 days",
-      text: "Every payment is covered by our refund policy: a simple email within 14 days is enough, the refund is full and processed via Stripe to your original payment method.",
+      text: "Every payment is covered by our refund policy: a simple email within 14 days is enough, the refund is full and processed to your original payment method.",
       link: "Read the refund policy",
     },
     paymentNote:
-      "All prices are displayed in euros (EUR, €). One-time payment, secured by Stripe. No subscription, no hidden fees.",
+      "All prices are displayed in euros (EUR, €). One-time payment, secured. No subscription, no hidden fees.",
     cta: { text: "Undecided between two packages?", button: "Ask us" },
   },
 
@@ -305,22 +302,22 @@ export const en: Dictionary = {
     meta: {
       title: "Payment — Pay for your packages online",
       description:
-        "Pay for your packages online securely via Stripe Checkout. Prices in euros (EUR), one-time payment, card data handled directly by Stripe.",
+        "Pay for your packages online securely. Prices in euros (EUR), one-time payment, card data handled directly by our payment provider.",
     },
     hero: {
       eyebrow: "Payment",
       title: "Pay for your packages securely.",
       subtitle:
-        "Payments go through Stripe Checkout, the payment platform used by millions of businesses. Add one or more packages to your cart and pay for everything at once — no subscription, no hidden fees.",
+        "Add one or more packages to your cart and pay for everything at once — no subscription, no hidden fees. Online payment will be live very soon.",
     },
     steps: [
       "Choose your packages",
-      "Pay securely via Stripe",
+      "Pay securely online",
       "We start your project",
     ],
     cardsNote: "Accepted cards: Visa, Mastercard, American Express.",
     securityNote:
-      "Your card details are entered directly on Stripe (PCI DSS certified) and never touch our servers. A receipt is sent to you by email.",
+      "Your card details are entered directly on the secure payment platform and never touch our servers. A receipt is sent to you by email.",
     success:
       "Payment confirmed — thank you! Your order is registered and we will contact you to start your project.",
     canceled: "Payment canceled. Your cart has been kept, you can try again whenever you like.",
@@ -425,7 +422,7 @@ export const en: Dictionary = {
         { label: "Legal name", value: "Angelika Jánošíková" },
         { label: "Contact", value: "contact@angelikajanosikova.com" },
         { label: "Activity", value: "Web development and digital marketing" },
-        { label: "Payment", value: "Stripe Checkout — secure one-time payment" },
+        { label: "Payment", value: "Secure one-time payment" },
       ],
     },
     cta: { title: "Let's work together.", button: "Contact us" },
@@ -435,7 +432,7 @@ export const en: Dictionary = {
     meta: {
       title: "Legal notice & Terms of Service",
       description:
-        "Legal notice and terms of service of Angelika Jánošíková: publisher, hosting, orders, prices, Stripe payments and refunds.",
+        "Legal notice and terms of service of Angelika Jánošíková: publisher, hosting, orders, prices, online payments and refunds.",
     },
     pageTitle: "Legal notice & Terms of Service",
     updated: "Last updated: October 7, 2026",
@@ -480,7 +477,7 @@ export const en: Dictionary = {
           },
           {
             type: "p" as const,
-            text: "Orders are placed through online payment from the “Payment” page. Payment is processed securely by Stripe; Angelika Jánošíková has no access to your card details. Full payment of the package constitutes acceptance of these terms of service and triggers the start of the ordered service.",
+            text: "Orders are placed through online payment from the “Payment” page. Payment is processed securely by our payment provider; Angelika Jánošíková has no access to your card details. Full payment of the package constitutes acceptance of these terms of service and triggers the start of the ordered service.",
           },
           {
             type: "p" as const,
@@ -502,7 +499,7 @@ export const en: Dictionary = {
         blocks: [
           {
             type: "p" as const,
-            text: "Payments are processed securely by Stripe, a PCI DSS certified provider; your card details are entered directly on the Stripe platform and never touch our servers. A receipt is sent to you by email after each payment. No subscription is offered: every order is a one-time payment.",
+            text: "Payments are processed securely by our payment provider; your card details are entered directly on the payment platform and never touch our servers. A receipt is sent to you by email after each payment. No subscription is offered: every order is a one-time payment.",
           },
         ],
       },
@@ -571,7 +568,7 @@ export const en: Dictionary = {
     meta: {
       title: "Privacy policy",
       description:
-        "Privacy policy of Angelika Jánošíková: data collected through the contact form and Stripe payments, purposes, retention and your rights.",
+        "Privacy policy of Angelika Jánošíková: data collected through the contact form and online payments, purposes, retention and your rights.",
     },
     pageTitle: "Privacy policy",
     updated: "Last updated: September 13, 2026",
@@ -592,7 +589,7 @@ export const en: Dictionary = {
             type: "ul" as const,
             items: [
               "Contact form: your name, your email address and the content of your message.",
-              "Payments: payment information is collected and processed directly by Stripe. We receive the payment confirmation and your email from Stripe, but we do not store any card data.",
+              "Payments: payment information is collected and processed directly by our payment provider. We receive the payment confirmation and your email, but we do not store any card data.",
               "Email communication: the history of our exchanges with you.",
             ],
           },
@@ -626,7 +623,7 @@ export const en: Dictionary = {
           {
             type: "ul" as const,
             items: [
-              "Stripe, Inc.: payment processing (Stripe acts as the data controller for payment data under its own compliance program).",
+              "Payment provider: online payment processing.",
               "Rapidenet Canada: website hosting.",
             ],
           },
@@ -646,7 +643,7 @@ export const en: Dictionary = {
         blocks: [
           {
             type: "p" as const,
-            text: "We apply reasonable technical and organizational measures to protect your data: HTTPS encryption across the whole website, payment processing by Stripe (PCI DSS certified) and no storage of card data whatsoever. Access to the data we hold (contact emails, order confirmations) is limited to the people who need it to handle your requests.",
+            text: "We apply reasonable technical and organizational measures to protect your data: HTTPS encryption across the whole website, payment processing by a specialized provider and no storage of card data whatsoever. Access to the data we hold (contact emails, order confirmations) is limited to the people who need it to handle your requests.",
           },
         ],
       },
@@ -655,7 +652,7 @@ export const en: Dictionary = {
         blocks: [
           {
             type: "p" as const,
-            text: "Our providers Stripe, Inc. and Rapidenet Canada process some data from the United States. These transfers are governed by the contractual mechanisms put in place by these providers (including standard contractual clauses and their compliance programs) to ensure an adequate level of protection.",
+            text: "Our payment providers and Rapidenet Canada process some data from the United States. These transfers are governed by the contractual mechanisms put in place by these providers (including standard contractual clauses and their compliance programs) to ensure an adequate level of protection.",
           },
         ],
       },
@@ -675,7 +672,7 @@ export const en: Dictionary = {
     meta: {
       title: "Refund policy — 14 days",
       description:
-        "Refund policy of Angelika Jánošíková: full refund upon request within 14 days of payment, processed via Stripe to your original payment method.",
+        "Refund policy of Angelika Jánošíková: full refund upon request within 14 days of payment, processed to your original payment method.",
     },
     pageTitle: "Refund policy",
     updated: "Last updated: September 13, 2026",
@@ -715,7 +712,7 @@ export const en: Dictionary = {
         blocks: [
           {
             type: "p" as const,
-            text: "The refund is issued via Stripe to the payment method used for the purchase. Depending on your bank, the amount appears on your account within a few business days after the request is processed.",
+            text: "The refund is issued to the payment method used for the purchase. Depending on your bank, the amount appears on your account within a few business days after the request is processed.",
           },
         ],
       },

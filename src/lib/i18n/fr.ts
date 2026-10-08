@@ -10,7 +10,7 @@ export const fr = {
     siteName: "Angelika Jánošíková",
     tagline: "Agence de développement web & marketing digital",
     siteDescription:
-      "Angelika Jánošíková conçoit des sites e-commerce, des applications web, des outils d'automatisation et pilote votre marketing digital. Forfaits à prix fixes, paiement sécurisé via Stripe.",
+      "Angelika Jánošíková conçoit des sites e-commerce, des applications web, des outils d'automatisation et pilote votre marketing digital. Forfaits à prix fixes, paiement sécurisé.",
   },
 
   nav: {
@@ -34,7 +34,7 @@ export const fr = {
     legalTitle: "Informations légales",
     contactTitle: "Contact",
     addressLabel: "Adresse",
-    paymentsNote: "Paiements sécurisés par Stripe.",
+    paymentsNote: "Paiements sécurisés.",
     // Ligne légale optionnelle en footer (vide = non affichée).
     legalLine: "Angelika Jánošíková — živnosť (entrepreneur individuel), IČO 57 935 092, Slovaquie.",
     rights: "Tous droits réservés.",
@@ -53,7 +53,7 @@ export const fr = {
     clear: "Vider le panier",
     total: "Total",
     checkout: "Passer au paiement",
-    checkingOut: "Redirection vers Stripe…",
+    checkingOut: "Redirection vers le paiement…",
   },
 
   whatsapp: {
@@ -116,7 +116,7 @@ export const fr = {
     meta: {
       title: "Angelika Jánošíková — Agence web & marketing digital",
       description:
-        "Sites e-commerce, applications web, automatisation et marketing digital. Forfaits à prix fixes affichés, paiement sécurisé via Stripe, remboursement sous 14 jours.",
+        "Sites e-commerce, applications web, automatisation et marketing digital. Forfaits à prix fixes affichés, paiement sécurisé, remboursement sous 14 jours.",
     },
     hero: {
       eyebrow: "Agence de développement web & marketing digital",
@@ -127,10 +127,7 @@ export const fr = {
         "Angelika Jánošíková conçoit et développe des sites e-commerce, des applications web sur-mesure, des outils d'automatisation et des campagnes de marketing digital. Des forfaits clairs, une exécution soignée, un paiement sécurisé.",
       ctaPrimary: "Découvrir nos forfaits",
       ctaSecondary: "Nous contacter",
-      badges: [
-        "Paiement sécurisé via Stripe",
-        "Remboursement sous 14 jours",
-      ],
+      badges: ["Paiement sécurisé", "Remboursement sous 14 jours"],
     },
     chipsTitle: "Ce que nous maîtrisons",
     chips: [
@@ -141,7 +138,7 @@ export const fr = {
       "Publicité en ligne",
       "SEO",
       "Réseaux sociaux",
-      "Intégrations API & Stripe",
+      "Intégrations API & paiement",
     ],
     services: {
       eyebrow: "Nos services",
@@ -285,7 +282,7 @@ export const fr = {
     meta: {
       title: "Tarifs — Forfaits à prix fixes",
       description:
-        "Les forfaits d'Angelika Jánošíková : Boutique Essentiel (1 200 €), App Sur-Mesure (2 200 €), Flux Automatisé (3 800 €), Croissance Digitale (1 800 €, semestriel). Paiement unique sécurisé via Stripe.",
+        "Les forfaits d'Angelika Jánošíková : Boutique Essentiel (1 200 €), App Sur-Mesure (2 200 €), Flux Automatisé (3 800 €), Croissance Digitale (1 800 €, semestriel). Paiement unique sécurisé.",
     },
     hero: {
       eyebrow: "Tarifs",
@@ -298,11 +295,11 @@ export const fr = {
     periodSemestrial: "forfait semestriel",
     guarantee: {
       title: "Satisfait ou remboursé — 14 jours",
-      text: "Chaque paiement est couvert par notre politique de remboursement : une demande par simple email dans les 14 jours suffit, le remboursement est intégral et traité via Stripe sur votre moyen de paiement d'origine.",
+      text: "Chaque paiement est couvert par notre politique de remboursement : une demande par simple email dans les 14 jours suffit, le remboursement est intégral et traité sur votre moyen de paiement d'origine.",
       link: "Lire la politique de remboursement",
     },
     paymentNote:
-      "Tous les prix sont affichés en euros (EUR, €). Paiement unique, sécurisé par Stripe. Aucun abonnement, aucun frais caché.",
+      "Tous les prix sont affichés en euros (EUR, €). Paiement unique, sécurisé. Aucun abonnement, aucun frais caché.",
     cta: { text: "Vous hésitez entre deux forfaits ?", button: "Demandez-nous" },
   },
 
@@ -310,22 +307,22 @@ export const fr = {
     meta: {
       title: "Paiement — Réglez vos forfaits en ligne",
       description:
-        "Payez vos forfaits en ligne en toute sécurité via Stripe Checkout. Prix en euros (EUR), paiement unique, données bancaires traitées directement par Stripe.",
+        "Payez vos forfaits en ligne en toute sécurité. Prix en euros (EUR), paiement unique, données bancaires traitées directement par notre prestataire de paiement.",
     },
     hero: {
       eyebrow: "Paiement",
       title: "Réglez vos forfaits en toute sécurité.",
       subtitle:
-        "Le paiement passe par Stripe Checkout, la plateforme de paiement utilisée par des millions d'entreprises. Ajoutez un ou plusieurs forfaits au panier et réglez le tout en une fois — sans abonnement ni frais cachés.",
+        "Ajoutez un ou plusieurs forfaits au panier et réglez le tout en une fois — sans abonnement ni frais cachés. Le paiement en ligne sera actif très prochainement.",
     },
     steps: [
       "Choisissez vos forfaits",
-      "Payez en toute sécurité via Stripe",
+      "Payez en toute sécurité en ligne",
       "Nous démarrons votre projet",
     ],
     cardsNote: "Cartes bancaires acceptées : Visa, Mastercard, American Express.",
     securityNote:
-      "Vos données bancaires sont saisies directement sur Stripe (certifié PCI DSS) et ne transitent jamais par nos serveurs. Un reçu vous est envoyé par email.",
+      "Vos données bancaires sont saisies directement sur la plateforme de paiement sécurisée et ne transitent jamais par nos serveurs. Un reçu vous est envoyé par email.",
     success:
       "Paiement confirmé — merci ! Votre commande est enregistrée, nous vous contactons pour démarrer votre projet.",
     canceled: "Paiement annulé. Votre panier est conservé, vous pouvez relancer quand vous le souhaitez.",
@@ -430,7 +427,7 @@ export const fr = {
         { label: "Dénomination sociale", value: "Angelika Jánošíková" },
         { label: "Contact", value: "contact@angelikajanosikova.com" },
         { label: "Activité", value: "Développement web et marketing digital" },
-        { label: "Paiement", value: "Stripe Checkout — paiement unique sécurisé" },
+        { label: "Paiement", value: "Paiement unique sécurisé" },
       ],
     },
     cta: { title: "Travaillons ensemble.", button: "Nous contacter" },
@@ -440,7 +437,7 @@ export const fr = {
     meta: {
       title: "Mentions légales & Conditions générales de vente",
       description:
-        "Mentions légales et conditions générales de vente d'Angelika Jánošíková : éditeur, hébergement, commandes, prix, paiement Stripe et remboursement.",
+        "Mentions légales et conditions générales de vente d'Angelika Jánošíková : éditeur, hébergement, commandes, prix, paiement en ligne et remboursement.",
     },
     pageTitle: "Mentions légales & CGV",
     updated: "Dernière mise à jour : 7 octobre 2026",
@@ -485,7 +482,7 @@ export const fr = {
           },
           {
             type: "p" as const,
-            text: "La commande s'effectue par paiement en ligne depuis la page « Paiement ». Le règlement est traité de manière sécurisée par Stripe ; Angelika Jánošíková n'a pas accès à vos données bancaires. Le paiement intégral du forfait vaut acceptation des présentes conditions générales de vente et déclenche le démarrage de la prestation commandée.",
+            text: "La commande s'effectue par paiement en ligne depuis la page « Paiement ». Le règlement est traité de manière sécurisée par notre prestataire de paiement ; Angelika Jánošíková n'a pas accès à vos données bancaires. Le paiement intégral du forfait vaut acceptation des présentes conditions générales de vente et déclenche le démarrage de la prestation commandée.",
           },
           {
             type: "p" as const,
@@ -507,7 +504,7 @@ export const fr = {
         blocks: [
           {
             type: "p" as const,
-            text: "Le paiement est traité de manière sécurisée par Stripe, prestataire certifié PCI DSS ; vos données bancaires sont saisies directement sur la plateforme Stripe et ne transitent jamais par nos serveurs. Un reçu vous est envoyé par email après chaque paiement. Aucun abonnement n'est proposé : chaque commande fait l'objet d'un paiement unique.",
+            text: "Le paiement est traité de manière sécurisée par notre prestataire de paiement ; vos données bancaires sont saisies directement sur la plateforme de paiement et ne transitent jamais par nos serveurs. Un reçu vous est envoyé par email après chaque paiement. Aucun abonnement n'est proposé : chaque commande fait l'objet d'un paiement unique.",
           },
         ],
       },
@@ -576,7 +573,7 @@ export const fr = {
     meta: {
       title: "Politique de confidentialité",
       description:
-        "Politique de confidentialité d'Angelika Jánošíková : données collectées via le formulaire de contact et les paiements Stripe, finalités, conservation et vos droits.",
+        "Politique de confidentialité d'Angelika Jánošíková : données collectées via le formulaire de contact et les paiements en ligne, finalités, conservation et vos droits.",
     },
     pageTitle: "Politique de confidentialité",
     updated: "Dernière mise à jour : 7 octobre 2026",
@@ -597,7 +594,7 @@ export const fr = {
             type: "ul" as const,
             items: [
               "Formulaire de contact : votre nom, votre adresse email et le contenu de votre message.",
-              "Paiement : les informations de paiement sont collectées et traitées directement par Stripe. Nous recevons de Stripe la confirmation du paiement et votre email, mais nous ne stockons aucune donnée bancaire.",
+              "Paiement : les informations de paiement sont collectées et traitées directement par notre prestataire de paiement. Nous recevons la confirmation du paiement et votre email, mais nous ne stockons aucune donnée bancaire.",
               "Communication par email : l'historique de nos échanges avec vous.",
             ],
           },
@@ -631,7 +628,7 @@ export const fr = {
           {
             type: "ul" as const,
             items: [
-              "Stripe, Inc. : traitement des paiements (Stripe agit comme responsable du traitement des données de paiement dans le cadre de son propre programme de conformité).",
+              "Prestataire de paiement : traitement des paiements en ligne.",
               "Rapidenet Canada : hébergement du site.",
             ],
           },
@@ -651,7 +648,7 @@ export const fr = {
         blocks: [
           {
             type: "p" as const,
-            text: "Nous appliquons des mesures techniques et organisationnelles raisonnables pour protéger vos données : chiffrement HTTPS de l'ensemble du site, traitement des paiements par Stripe (certifié PCI DSS) et absence totale de stockage de données bancaires. L'accès aux données que nous détenons (emails de contact, confirmations de commande) est limité aux personnes qui en ont besoin pour traiter vos demandes.",
+            text: "Nous appliquons des mesures techniques et organisationnelles raisonnables pour protéger vos données : chiffrement HTTPS de l'ensemble du site, traitement des paiements par un prestataire spécialisé et absence totale de stockage de données bancaires. L'accès aux données que nous détenons (emails de contact, confirmations de commande) est limité aux personnes qui en ont besoin pour traiter vos demandes.",
           },
         ],
       },
@@ -660,7 +657,7 @@ export const fr = {
         blocks: [
           {
             type: "p" as const,
-            text: "Nos prestataires Stripe, Inc. et Rapidenet Canada traitent certaines données depuis les États-Unis. Ces transferts sont encadrés par les mécanismes contractuels prévus par ces prestataires (notamment les clauses contractuelles types et leurs programmes de conformité) afin d'assurer un niveau de protection adapté.",
+            text: "Nos prestataires de paiement et Rapidenet Canada traitent certaines données depuis les États-Unis. Ces transferts sont encadrés par les mécanismes contractuels prévus par ces prestataires (notamment les clauses contractuelles types et leurs programmes de conformité) afin d'assurer un niveau de protection adapté.",
           },
         ],
       },
@@ -680,7 +677,7 @@ export const fr = {
     meta: {
       title: "Politique de remboursement — 14 jours",
       description:
-        "Politique de remboursement d'Angelika Jánošíková : remboursement intégral sur demande dans les 14 jours suivant le paiement, traité via Stripe sur votre moyen de paiement d'origine.",
+        "Politique de remboursement d'Angelika Jánošíková : remboursement intégral sur demande dans les 14 jours suivant le paiement, traité sur votre moyen de paiement d'origine.",
     },
     pageTitle: "Politique de remboursement",
     updated: "Dernière mise à jour : 7 octobre 2026",
@@ -720,7 +717,7 @@ export const fr = {
         blocks: [
           {
             type: "p" as const,
-            text: "Le remboursement est effectué via Stripe sur le moyen de paiement utilisé lors de l'achat. Selon votre banque, le montant apparaît sur votre compte sous quelques jours ouvrés après le traitement de la demande.",
+            text: "Le remboursement est effectué sur le moyen de paiement utilisé lors de l'achat. Selon votre banque, le montant apparaît sur votre compte sous quelques jours ouvrés après le traitement de la demande.",
           },
         ],
       },

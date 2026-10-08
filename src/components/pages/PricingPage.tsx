@@ -53,7 +53,7 @@ export default function PricingPage({ locale, dict }: { locale: Locale; dict: Di
 
         <p className="mt-8 text-center text-sm text-zinc-500">{t.paymentNote}</p>
 
-        {/* Garantie 14 jours — info clé pour la conformité Stripe */}
+        {/* Garantie 14 jours — info clé pour la conformité */}
         <div
           className="card mt-10 flex flex-col items-start gap-5 border-accent/20 bg-accent-soft/60 p-7 transition-shadow hover:shadow-md sm:flex-row sm:items-center"
           data-reveal

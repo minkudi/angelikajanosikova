@@ -13,7 +13,8 @@ type PaymentCopy = Dictionary["payment"];
 
 // Drawer latéral du panier : s'ouvre à l'ajout d'un forfait et via le bouton
 // panier du header. Responsive (pleine largeur sur mobile), fermeture par la
-// croix, le fond ou la touche Échap ; paiement de l'ensemble via Stripe.
+// croix, le fond ou la touche Échap ; paiement désactivé jusqu'à intégration du
+// nouveau processeur.
 export default function CartDrawer({
   locale,
   cartCopy,
@@ -62,10 +63,10 @@ export default function CartDrawer({
         .catch(() => null);
       if (res.ok && data?.url) {
         window.location.href = data.url;
-        return; // redirection vers Stripe Checkout
+        return; // redirection vers le prestataire de paiement
       }
       setError(
-        res.status === 503 || data?.error === "stripe_not_configured"
+        res.status === 503 || data?.error === "payment_not_configured"
           ? "not_configured"
           : "error",
       );

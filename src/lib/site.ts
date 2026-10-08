@@ -1,5 +1,4 @@
-// Constantes légales et de contact de l'entreprise — affichées sur tout le site
-// (conformité Stripe : nom légal visible en footer + coordonnées vérifiables).
+// Constantes légales et de contact de l'entreprise — affichées sur tout le site.
 export const SITE = {
   legalName: "Angelika Jánošíková",
   jurisdiction: "Slovak Republic",
