@@ -72,22 +72,6 @@ export const en: Dictionary = {
   // ——— Product catalogue (shared: home, pricing, payment) ———
   packages: {
     // Guides & digital tools
-    "guide-strategie-digitale": {
-      name: "Digital Strategy Guide for SMEs",
-      tagline: "Everything you need to digitalize your business, step by step.",
-    },
-    "checklist-gestion-administrative": {
-      name: "Administrative Management Checklist",
-      tagline: "The control list that puts your internal operations back in order.",
-    },
-    "manuel-leadership-situationnel": {
-      name: "Situational Leadership Handbook",
-      tagline: "Adapt your management style to every situation and every team.",
-    },
-    "analyse-swot": {
-      name: "Simplified SWOT Analysis",
-      tagline: "The template and method to run your own strategic diagnosis.",
-    },
     "templates-factures": {
       name: "5 Professional Invoice Templates",
       tagline: "Five templates to prepare professional invoices.",
@@ -311,7 +295,7 @@ export const en: Dictionary = {
       eyebrow: "Catalogue",
       title: "Clear prices, published upfront.",
       subtitle:
-        "Guides and digital tools, trainings, certifications and support: everything is published, from the €9 mini tool to the €650 complete strategic audit.",
+        "Guides and digital tools, trainings, certifications and support: everything is published, from €29 invoice templates to the €650 complete strategic audit.",
       cta: "See the whole catalogue",
     },
     cta: {
@@ -398,7 +382,7 @@ export const en: Dictionary = {
     meta: {
       title: "Pricing — Guides, trainings, certifications and consulting",
       description:
-        "The Angelika Jánošíková catalogue: guides and digital tools from €9, online trainings, certifications and consulting up to €650. Prices displayed in euros.",
+        "The Angelika Jánošíková catalogue: guides and digital tools from €29, online trainings, certifications and consulting up to €650. Prices displayed in euros.",
     },
     hero: {
       eyebrow: "Pricing",
@@ -606,7 +590,7 @@ export const en: Dictionary = {
         blocks: [
           {
             type: "p" as const,
-            text: "Products and services are sold at fixed prices, displayed in euros (EUR, €) on the “Pricing” page of this website. The catalogue covers four families: guides and digital tools (€9 to €69), online trainings (€49 to €349), certifications (€95 to €390) and consulting services (€65 to €650). All prices are net, in euros; the final amount to pay is confirmed before payment.",
+            text: "Products and services are sold at fixed prices, displayed in euros (EUR, €) on the “Pricing” page of this website. The catalogue covers four families: guides and digital tools (€29 to €69), online trainings (€49 to €349), certifications (€95 to €390) and consulting services (€65 to €650). All prices are net, in euros; the final amount to pay is confirmed before payment.",
           },
           {
             type: "p" as const,

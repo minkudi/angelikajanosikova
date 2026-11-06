@@ -76,22 +76,6 @@ export const fr = {
   // ——— Catalogue produits (partagé : accueil, tarifs, paiement) ———
   packages: {
     // Guides & outils digitaux
-    "guide-strategie-digitale": {
-      name: "Guide Stratégie Digitale PME",
-      tagline: "L'essentiel pour digitaliser votre entreprise, étape par étape.",
-    },
-    "checklist-gestion-administrative": {
-      name: "Checklist Gestion Administrative",
-      tagline: "La liste de contrôle qui remet de l'ordre dans votre gestion interne.",
-    },
-    "manuel-leadership-situationnel": {
-      name: "Manuel du Leadership Situationnel",
-      tagline: "Adaptez votre style de management à chaque situation et chaque équipe.",
-    },
-    "analyse-swot": {
-      name: "Analyse SWOT Simplifiée",
-      tagline: "Le template et la méthode pour réaliser votre diagnostic stratégique.",
-    },
     "templates-factures": {
       name: "5 Modèles de Factures Professionnels",
       tagline: "Cinq modèles pour préparer vos factures professionnelles.",
@@ -315,7 +299,7 @@ export const fr = {
       eyebrow: "Catalogue",
       title: "Des prix clairs, affichés d'avance.",
       subtitle:
-        "Guides et outils digitaux, formations, certifications et accompagnement : tout est affiché, du petit outil à 9 € à l'audit stratégique complet à 650 €.",
+        "Guides et outils digitaux, formations, certifications et accompagnement : tout est affiché, des modèles de factures à 29 € à l'audit stratégique complet à 650 €.",
       cta: "Voir tout le catalogue",
     },
     cta: {
@@ -402,7 +386,7 @@ export const fr = {
     meta: {
       title: "Tarifs — Guides, formations, certifications et conseil",
       description:
-        "Le catalogue d'Angelika Jánošíková : guides et outils digitaux dès 9 €, formations en ligne, certifications et prestations de conseil jusqu'à 650 €. Prix affichés en euros.",
+        "Le catalogue d'Angelika Jánošíková : guides et outils digitaux dès 29 €, formations en ligne, certifications et prestations de conseil jusqu'à 650 €. Prix affichés en euros.",
     },
     hero: {
       eyebrow: "Tarifs",
@@ -610,7 +594,7 @@ export const fr = {
         blocks: [
           {
             type: "p" as const,
-            text: "Les produits et prestations sont commercialisés à prix fixes, affichés en euros (EUR, €) sur la page « Tarifs » du présent site. Le catalogue couvre quatre familles : guides et outils digitaux (de 9 € à 69 €), formations en ligne (de 49 € à 349 €), certifications (de 95 € à 390 €) et prestations de conseil et accompagnement (de 65 € à 650 €). Tous les prix sont nets, en euros ; le montant final à payer est confirmé avant le paiement.",
+            text: "Les produits et prestations sont commercialisés à prix fixes, affichés en euros (EUR, €) sur la page « Tarifs » du présent site. Le catalogue couvre quatre familles : guides et outils digitaux (de 29 € à 69 €), formations en ligne (de 49 € à 349 €), certifications (de 95 € à 390 €) et prestations de conseil et accompagnement (de 65 € à 650 €). Tous les prix sont nets, en euros ; le montant final à payer est confirmé avant le paiement.",
           },
           {
             type: "p" as const,

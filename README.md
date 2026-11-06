@@ -78,7 +78,7 @@ src/
 
 ## Pages
 
-Accueil · Services web · Catalogue de 37 produits et prestations · Commande par email ·
+Accueil · Services web · Catalogue de 33 produits et prestations · Commande par email ·
 Contact (formulaire + coordonnées) · À propos (corporate) ·
 Mentions légales & CGV · Politique de confidentialité · Politique de remboursement
 (14 jours).

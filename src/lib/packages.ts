@@ -18,10 +18,6 @@ export const PACKAGES: {
   category: CategoryId;
 }[] = [
   // ——— Guides & outils digitaux ———
-  { id: "guide-strategie-digitale", amount: 900, category: "guides" },
-  { id: "checklist-gestion-administrative", amount: 1900, category: "guides" },
-  { id: "manuel-leadership-situationnel", amount: 2400, category: "guides" },
-  { id: "analyse-swot", amount: 2480, category: "guides" },
   { id: "templates-factures", amount: 2900, category: "guides" },
   { id: "plan-marketing-12-mois", amount: 2990, category: "guides" },
   { id: "pack-outils-excel", amount: 6000, category: "guides" },

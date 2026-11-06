@@ -75,7 +75,7 @@ export type PackageView = {
   priceLabel: string;
 };
 
-// Le catalogue complet (37 produits) enrichi des libellés localisés et du prix formaté.
+// Le catalogue complet enrichi des libellés localisés et du prix formaté.
 export function packagesView(locale: Locale, dict: Dictionary): PackageView[] {
   return PACKAGES.map((p) => {
     const copy = dict.packages[p.id];
