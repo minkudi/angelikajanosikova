@@ -10,14 +10,14 @@ export const fr = {
     siteName: "Angelika Jánošíková",
     tagline: "Agence de développement web & marketing digital",
     siteDescription:
-      "Angelika Jánošíková conçoit des sites e-commerce, des applications web, des outils d'automatisation et pilote votre marketing digital. Forfaits à prix fixes, paiement sécurisé.",
+      "Angelika Jánošíková conçoit des sites e-commerce, des applications web, des outils d'automatisation et pilote votre marketing digital. Découvrez nos produits et services à prix affichés.",
   },
 
   nav: {
     home: "Accueil",
     services: "Services",
     pricing: "Tarifs",
-    payment: "Paiement",
+    payment: "Commander",
     about: "À propos",
     contact: "Contact",
     cta: "Démarrer un projet",
@@ -34,7 +34,7 @@ export const fr = {
     legalTitle: "Informations légales",
     contactTitle: "Contact",
     addressLabel: "Adresse",
-    paymentsNote: "Paiements sécurisés.",
+    paymentsNote: "Commandes par email.",
     // Ligne légale optionnelle en footer (vide = non affichée).
     legalLine: "Angelika Jánošíková — živnosť (entrepreneur individuel), IČO 57 935 092, Slovaquie.",
     rights: "Tous droits réservés.",
@@ -43,7 +43,7 @@ export const fr = {
   cart: {
     menuLabel: "Panier",
     title: "Votre panier",
-    empty: "Votre panier est vide. Ajoutez un forfait pour démarrer votre projet.",
+    empty: "Votre panier est vide. Ajoutez un produit pour commencer.",
     add: "Ajouter au panier",
     added: "Ajouté au panier",
     quantity: "Quantité",
@@ -52,8 +52,14 @@ export const fr = {
     remove: "Retirer du panier",
     clear: "Vider le panier",
     total: "Total",
-    checkout: "Passer au paiement",
-    checkingOut: "Redirection vers le paiement…",
+    checkout: "Commander par email",
+    checkingOut: "Ouverture de votre messagerie…",
+    orderSubject: "Commande — Angelika Jánošíková",
+    orderGreeting: "Bonjour,",
+    orderIntro: "Je souhaite commander les produits suivants :",
+    orderTotalLabel: "Total de la commande",
+    orderOutro:
+      "Merci de me confirmer la disponibilité ainsi que les modalités de paiement.",
   },
 
   whatsapp: {
@@ -67,48 +73,162 @@ export const fr = {
     back: "Retour à l'accueil",
   },
 
-  // ——— Forfaits (partagés : accueil, tarifs, paiement, services) ———
+  // ——— Catalogue produits (partagé : accueil, tarifs, paiement) ———
   packages: {
-    boutique: {
-      name: "Boutique Essentiel",
-      tagline: "Site e-commerce clé en main",
-      features: [
-        "Boutique en ligne complète : catalogue, panier, paiement en ligne",
-        "Design sur mesure, responsive mobile / tablette / ordinateur",
-        "Tableau de bord simple pour gérer vos produits et commandes",
-        "Référencement de base et mise en ligne accompagnée",
-      ],
+    // Guides & outils digitaux
+    "guide-strategie-digitale": {
+      name: "Guide Stratégie Digitale PME",
+      tagline: "L'essentiel pour digitaliser votre entreprise, étape par étape.",
     },
-    app: {
-      name: "App Sur-Mesure",
-      tagline: "Application web développée pour vous",
-      features: [
-        "Application web sur-mesure selon votre cahier des charges",
-        "Comptes utilisateurs, rôles et espace d'administration",
-        "Base de données, API et intégrations tierces (paiement, email…)",
-        "Recette complète et documentation de prise en main",
-      ],
+    "checklist-gestion-administrative": {
+      name: "Checklist Gestion Administrative",
+      tagline: "La liste de contrôle qui remet de l'ordre dans votre gestion interne.",
     },
-    flux: {
-      name: "Flux Automatisé",
-      tagline: "Automatisation & traitement de données",
-      features: [
-        "Audit de vos processus et identification des gains possibles",
-        "Automatisation des tâches répétitives entre vos outils",
-        "Pipelines de collecte, de nettoyage et de traitement de données",
-        "Tableaux de bord et rapports générés automatiquement",
-      ],
+    "manuel-leadership-situationnel": {
+      name: "Manuel du Leadership Situationnel",
+      tagline: "Adaptez votre style de management à chaque situation et chaque équipe.",
     },
-    croissance: {
-      name: "Croissance Digitale",
-      tagline: "Marketing digital — forfait semestriel",
-      period: "6 mois de prestation",
-      features: [
-        "Stratégie digitale et plan d'action sur 6 mois",
-        "Campagnes publicitaires en ligne (search et réseaux sociaux)",
-        "Optimisation SEO de votre site et de vos contenus",
-        "Animation des réseaux sociaux et reporting mensuel",
-      ],
+    "analyse-swot": {
+      name: "Analyse SWOT Simplifiée",
+      tagline: "Le template et la méthode pour réaliser votre diagnostic stratégique.",
+    },
+    "templates-factures": {
+      name: "5 Modèles de Factures Professionnels",
+      tagline: "Cinq modèles pour préparer vos factures professionnelles.",
+    },
+    "plan-marketing-12-mois": {
+      name: "Plan Marketing 12 Mois",
+      tagline: "Un calendrier d'actions marketing clé en main pour toute l'année.",
+    },
+    "pack-outils-excel": {
+      name: "Pack Excel Gestion Financière",
+      tagline: "Des classeurs prêts à l'emploi pour piloter vos chiffres sereinement.",
+    },
+    "strategie-reseaux-b2b": {
+      name: "Stratégie Réseaux Sociaux B2B",
+      tagline: "Le guide complet pour bâtir une présence B2B qui génère des contacts.",
+    },
+
+    // Formations en ligne
+    "formation-projet-agile": {
+      name: "Piloter ses projets avec la méthode agile",
+      tagline: "Maîtrisez les méthodologies agiles, de la théorie à la pratique.",
+    },
+    "webinaire-communication-crise": {
+      name: "Communiquer face à une crise : webinaire",
+      tagline: "Découvrez les principes de communication en situation de crise.",
+    },
+    "module-rh-digitale": {
+      name: "Module RH Digitale",
+      tagline: "Automatisez vos processus RH, du recrutement aux comptes rendus.",
+    },
+    "programme-lean-management": {
+      name: "Programme Lean Management",
+      tagline: "Les fondamentaux pour éliminer les gaspillages et fluidifier vos opérations.",
+    },
+    "atelier-planification-strategique": {
+      name: "Atelier Planification Stratégique",
+      tagline: "Une session interactive pour construire votre plan de l'année.",
+    },
+    "master-class-negociation": {
+      name: "Négociation commerciale : formation intensive",
+      tagline: "Les techniques de négociation avancées, en format intensif.",
+    },
+    "culture-entreprise": {
+      name: "Culture d'Entreprise Cohérente",
+      tagline: "Un programme de trois mois pour installer une culture forte et durable.",
+    },
+    "formation-gestion-crise": {
+      name: "Préparer et gérer les situations de crise",
+      tagline: "Préparez et pilotez toute situation critique, de A à Z.",
+    },
+    "programme-leader-inclusif": {
+      name: "Programme Leader Responsable & Inclusif",
+      tagline: "Une formation certifiante sur le leadership qui a du sens.",
+    },
+    "formation-supply-chain": {
+      name: "Piloter la chaîne logistique : formation",
+      tagline: "Une master class complète sur l'optimisation de la chaîne logistique.",
+    },
+    "master-leadership": {
+      name: "Développer son leadership pour conduire le changement",
+      tagline: "Quatorze heures de cursus intensif pour diriger le changement.",
+    },
+
+    // Certifications
+    "certification-okr": {
+      name: "Déployer la méthode OKR : formation certifiante",
+      tagline: "La formation certifiante sur les Objectifs et Résultats Clés.",
+    },
+    "certification-iso-9001": {
+      name: "Certification Qualité ISO 9001",
+      tagline: "Comprendre et implémenter ISO 9001 dans votre entreprise.",
+    },
+    "certification-agile-master": {
+      name: "Certification Agile Master",
+      tagline: "La certification professionnelle de la gestion de projet agile avancée.",
+    },
+    "certification-manager": {
+      name: "Certification Manager d'Entreprise",
+      tagline: "Un programme couvrant stratégie, finance, RH et opérations.",
+    },
+
+    // Conseil & accompagnement
+    "audit-interne-processus": {
+      name: "Audit Interne des Processus",
+      tagline: "Une analyse complète de vos workflows internes et de leurs failles.",
+    },
+    "diagnostic-strategique": {
+      name: "Diagnostic Stratégique Personnalisé",
+      tagline: "Une demi-journée de consultation pour évaluer votre position réelle.",
+    },
+    "coaching-management-individuel": {
+      name: "Coaching individuel pour managers",
+      tagline: "Trois sessions d'une heure pour développer vos compétences de manager.",
+    },
+    "audit-conformite-rgpd": {
+      name: "Audit de conformité des données personnelles",
+      tagline: "Un diagnostic complet de votre conformité aux données personnelles.",
+    },
+    "consulting-restructuration": {
+      name: "Réinventer votre organisation : accompagnement",
+      tagline: "Repensez votre structure interne, les rôles et les responsabilités.",
+    },
+    "programme-transformation-digitale": {
+      name: "Programme Transformation Digitale Sur-Mesure",
+      tagline: "Quatre mois de programme personnalisé pour votre transition digitale.",
+    },
+    "coaching-equipe": {
+      name: "Développer la performance de votre équipe",
+      tagline: "Six sessions pour développer la performance collective de votre équipe.",
+    },
+    "strategie-marque": {
+      name: "Construire sa stratégie de marque",
+      tagline: "Clarifiez et affirmez votre marque pour être choisie, pas seulement vue.",
+    },
+    "consulting-expansion": {
+      name: "Consulting Expansion Internationale",
+      tagline: "Un accompagnement expert pour aborder de nouveaux marchés sereinement.",
+    },
+    "transformation-processus-finance": {
+      name: "Transformation des Processus Finance",
+      tagline: "Modernisez et automatisez vos processus financiers de bout en bout.",
+    },
+    "strategie-e-commerce": {
+      name: "Stratégie E-commerce & Transformation Digitale",
+      tagline: "Un consulting complet pour lancer ou transformer votre activité en ligne.",
+    },
+    "consulting-fusions": {
+      name: "Consulting Fusions & Acquisitions",
+      tagline: "Évaluez, structurez et intégrez votre acquisition en toute sécurité.",
+    },
+    "programme-transformation-organisationnelle": {
+      name: "Programme Transformation Organisationnelle",
+      tagline: "Six mois pour transformer votre organisation en profondeur.",
+    },
+    "audit-strategique-complet": {
+      name: "Bilan stratégique complet de votre entreprise",
+      tagline: "Deux semaines d'audit approfondi pour évaluer votre compétitivité. Notre offre phare.",
     },
   },
 
@@ -116,7 +236,7 @@ export const fr = {
     meta: {
       title: "Angelika Jánošíková — Agence web & marketing digital",
       description:
-        "Sites e-commerce, applications web, automatisation et marketing digital. Forfaits à prix fixes affichés, paiement sécurisé, remboursement sous 14 jours.",
+        "Sites e-commerce, applications web, automatisation et marketing digital. Découvrez notre catalogue et contactez-nous par email.",
     },
     hero: {
       eyebrow: "Agence de développement web & marketing digital",
@@ -124,10 +244,10 @@ export const fr = {
       titleAccent: "qui font grandir",
       titleB: "votre entreprise.",
       subtitle:
-        "Angelika Jánošíková conçoit et développe des sites e-commerce, des applications web sur-mesure, des outils d'automatisation et des campagnes de marketing digital. Des forfaits clairs, une exécution soignée, un paiement sécurisé.",
-      ctaPrimary: "Découvrir nos forfaits",
+        "Angelika Jánošíková conçoit et développe des sites e-commerce, des applications web sur-mesure, des outils d'automatisation et des campagnes de marketing digital — et met à votre disposition un catalogue de guides, formations et accompagnements pour faire grandir votre entreprise. Des prix clairs, une exécution soignée.",
+      ctaPrimary: "Découvrir le catalogue",
       ctaSecondary: "Nous contacter",
-      badges: ["Paiement sécurisé", "Remboursement sous 14 jours"],
+      badges: ["Commande par email", "Remboursement sous 14 jours"],
     },
     chipsTitle: "Ce que nous maîtrisons",
     chips: [
@@ -153,7 +273,7 @@ export const fr = {
       items: [
         {
           title: "Prix publics et fermes",
-          desc: "Nos forfaits sont affichés avec leur tarif : vous savez exactement ce que vous payez avant même de nous écrire.",
+          desc: "Nos produits sont affichés avec leur tarif : vous savez exactement ce que vous payez avant même de nous écrire.",
         },
         {
           title: "Exécution d'ingénieur",
@@ -165,7 +285,7 @@ export const fr = {
         },
         {
           title: "Engagement 14 jours",
-          desc: "Chaque forfait est couvert par notre politique de remboursement intégral de 14 jours.",
+          desc: "Chaque produit est couvert par notre politique de remboursement intégral de 14 jours.",
         },
       ],
     },
@@ -178,8 +298,8 @@ export const fr = {
           desc: "Vous nous écrivez, nous échangeons sur vos objectifs et nous définissons ensemble le périmètre.",
         },
         {
-          title: "Forfait",
-          desc: "Vous choisissez le forfait correspondant : prix fixe, périmètre écrit, aucune mauvaise surprise.",
+          title: "Commande",
+          desc: "Vous choisissez les produits correspondants : prix affichés, périmètre écrit, aucune mauvaise surprise.",
         },
         {
           title: "Réalisation",
@@ -192,15 +312,15 @@ export const fr = {
       ],
     },
     pricingTeaser: {
-      eyebrow: "Forfaits",
+      eyebrow: "Catalogue",
       title: "Des prix clairs, affichés d'avance.",
       subtitle:
-        "Quatre forfaits couvrant l'essentiel du digital, payables en ligne en toute sécurité. Le détail des prestations est écrit noir sur blanc.",
-      cta: "Voir tous les tarifs",
+        "Guides et outils digitaux, formations, certifications et accompagnement : tout est affiché, du petit outil à 9 € à l'audit stratégique complet à 650 €.",
+      cta: "Voir tout le catalogue",
     },
     cta: {
       title: "Un projet en tête ?",
-      text: "Décrivez-nous votre besoin : nous revenons vers vous avec une proposition claire et un forfait adapté.",
+      text: "Décrivez-nous votre besoin : nous revenons vers vous avec une proposition claire et un produit adapté.",
       button: "Démarrer un projet",
     },
   },
@@ -230,7 +350,7 @@ export const fr = {
           "Bonnes pratiques SEO et performance dès la conception",
           "Formation à la gestion de votre boutique",
         ],
-        packageRef: "Forfait associé : Boutique Essentiel",
+        packageRef: "Voir le catalogue et les tarifs",
       },
       app: {
         title: "Applications web",
@@ -244,7 +364,7 @@ export const fr = {
           "Tests, recette et documentation de prise en main",
           "Code que vous restez libres de faire évoluer",
         ],
-        packageRef: "Forfait associé : App Sur-Mesure",
+        packageRef: "Voir le catalogue et les tarifs",
       },
       flux: {
         title: "Automatisation & traitement de données",
@@ -258,7 +378,7 @@ export const fr = {
           "Tableaux de bord et rapports automatiques",
           "Supervision et maintenance des flux livrés",
         ],
-        packageRef: "Forfait associé : Flux Automatisé",
+        packageRef: "Voir le catalogue et les tarifs",
       },
       croissance: {
         title: "Marketing digital",
@@ -272,7 +392,7 @@ export const fr = {
           "Animation et cohérence de vos réseaux sociaux",
           "Reporting mensuel lisible et orienté résultats",
         ],
-        packageRef: "Forfait associé : Croissance Digitale (semestriel)",
+        packageRef: "Voir le catalogue et les tarifs",
       },
     },
     cta: { text: "Un besoin qui ne rentre dans aucune case ?", button: "Discutons-en" },
@@ -280,57 +400,69 @@ export const fr = {
 
   pricing: {
     meta: {
-      title: "Tarifs — Forfaits à prix fixes",
+      title: "Tarifs — Guides, formations, certifications et conseil",
       description:
-        "Les forfaits d'Angelika Jánošíková : Boutique Essentiel (1 200 €), App Sur-Mesure (2 200 €), Flux Automatisé (3 800 €), Croissance Digitale (1 800 €, semestriel). Paiement unique sécurisé.",
+        "Le catalogue d'Angelika Jánošíková : guides et outils digitaux dès 9 €, formations en ligne, certifications et prestations de conseil jusqu'à 650 €. Prix affichés en euros.",
     },
     hero: {
       eyebrow: "Tarifs",
-      title: "Quatre forfaits, quatre prix fixes.",
+      title: "Un catalogue entier, des prix affichés.",
       subtitle:
-        "Pas de devis opaque ni d'heures facturées à l'aveugle : vous choisissez un forfait, vous connaissez le prix et le périmètre. C'est tout.",
+        "Pas de devis opaque ni d'heures facturées à l'aveugle : chaque produit a un prix public et un périmètre écrit. Vous commandez par email, nous confirmons et nous démarrons.",
     },
     included: "Ce qui est inclus",
-    choose: "Choisir ce forfait",
-    periodSemestrial: "forfait semestriel",
+    choose: "Commander",
+    fromPrice: "dès",
+    categories: {
+      guides: {
+        name: "Guides & outils digitaux",
+        tagline: "Des ressources prêtes à l'emploi, applicables dès cette semaine.",
+      },
+      formations: {
+        name: "Formations en ligne",
+        tagline: "Des cursus concrets pour monter en compétence à votre rythme.",
+      },
+      certifications: {
+        name: "Certifications",
+        tagline: "Des programmes de formation et de certification pour développer vos compétences.",
+      },
+      conseil: {
+        name: "Conseil & accompagnement",
+        tagline: "Des prestations sur mesure, du diagnostic à la transformation complète.",
+      },
+    },
     guarantee: {
       title: "Satisfait ou remboursé — 14 jours",
       text: "Chaque paiement est couvert par notre politique de remboursement : une demande par simple email dans les 14 jours suffit, le remboursement est intégral et traité sur votre moyen de paiement d'origine.",
       link: "Lire la politique de remboursement",
     },
     paymentNote:
-      "Tous les prix sont affichés en euros (EUR, €). Paiement unique, sécurisé. Aucun abonnement, aucun frais caché.",
-    cta: { text: "Vous hésitez entre deux forfaits ?", button: "Demandez-nous" },
+      "Tous les prix sont affichés en euros (EUR, €). Aucun abonnement, aucun frais caché.",
+    cta: { text: "Vous hésitez entre deux produits ?", button: "Demandez-nous" },
   },
 
   payment: {
     meta: {
-      title: "Paiement — Réglez vos forfaits en ligne",
+      title: "Commander — Produits digitaux, formations et conseil",
       description:
-        "Payez vos forfaits en ligne en toute sécurité. Prix en euros (EUR), paiement unique, données bancaires traitées directement par notre prestataire de paiement.",
+        "Constituez votre panier et envoyez votre commande par email. Prix en euros (EUR) ; modalités de paiement communiquées après confirmation.",
     },
     hero: {
-      eyebrow: "Paiement",
-      title: "Réglez vos forfaits en toute sécurité.",
+      eyebrow: "Commander",
+      title: "Trois étapes, aucune surprise.",
       subtitle:
-        "Ajoutez un ou plusieurs forfaits au panier et réglez le tout en une fois — sans abonnement ni frais cachés. Le paiement en ligne sera actif très prochainement.",
+        "Ajoutez vos produits au panier puis envoyez votre commande par email : nous confirmons la disponibilité et les modalités de paiement, puis nous démarrons.",
     },
     steps: [
-      "Choisissez vos forfaits",
-      "Payez en toute sécurité en ligne",
-      "Nous démarrons votre projet",
+      "Choisissez vos produits",
+      "Envoyez votre commande par email",
+      "Nous confirmons et démarrons",
     ],
-    cardsNote: "Cartes bancaires acceptées : Visa, Mastercard, American Express.",
+    emailNote:
+      "Votre commande s'ouvre dans votre messagerie : envoyez l'email pour nous la transmettre, nous répondons avec les modalités de paiement.",
     securityNote:
-      "Vos données bancaires sont saisies directement sur la plateforme de paiement sécurisée et ne transitent jamais par nos serveurs. Un reçu vous est envoyé par email.",
-    success:
-      "Paiement confirmé — merci ! Votre commande est enregistrée, nous vous contactons pour démarrer votre projet.",
-    canceled: "Paiement annulé. Votre panier est conservé, vous pouvez relancer quand vous le souhaitez.",
-    notConfiguredTitle: "Paiement en cours d'activation",
-    notConfigured:
-      "Le paiement en ligne sera actif très prochainement. Pour commander dès maintenant, écrivez-nous :",
-    error: "Une erreur est survenue lors de la création de la session de paiement. Réessayez dans un instant.",
-    vatNote: "Prix nets en euros (EUR), paiement unique.",
+      "N'envoyez aucune donnée bancaire par email. Les modalités de paiement vous seront communiquées après confirmation.",
+    vatNote: "Prix nets en euros (EUR).",
   },
 
   contact: {
@@ -386,7 +518,7 @@ export const fr = {
     mission: {
       eyebrow: "Notre mission",
       title: "Mettre la technologie au service de votre croissance.",
-      text: "Les petites et moyennes entreprises n'ont pas toujours les moyens d'embaucher une équipe technique. Notre rôle : leur donner accès à la même qualité d'outils et d'exécution que les grandes — avec des forfaits à prix fixes et une relation directe, sans couches d'intermédiaires.",
+      text: "Les petites et moyennes entreprises n'ont pas toujours les moyens d'embaucher une équipe technique. Notre rôle : leur donner accès à la même qualité d'outils et d'exécution que les grandes — avec des prix fixes affichés et une relation directe, sans couches d'intermédiaires.",
     },
     axes: {
       eyebrow: "Nos axes de travail",
@@ -427,7 +559,7 @@ export const fr = {
         { label: "Dénomination sociale", value: "Angelika Jánošíková" },
         { label: "Contact", value: "contact@angelikajanosikova.com" },
         { label: "Activité", value: "Développement web et marketing digital" },
-        { label: "Paiement", value: "Paiement unique sécurisé" },
+        { label: "Commande", value: "Par email" },
       ],
     },
     cta: { title: "Travaillons ensemble.", button: "Nous contacter" },
@@ -478,15 +610,15 @@ export const fr = {
         blocks: [
           {
             type: "p" as const,
-            text: "Les prestations sont commercialisées sous forme de forfaits à prix fixes, décrits et affichés en euros (EUR, €) sur la page « Tarifs » du présent site : Boutique Essentiel (1 200 €), App Sur-Mesure (2 200 €), Flux Automatisé (3 800 €) et Croissance Digitale (1 800 €, forfait semestriel couvrant six mois de prestation). Tous les prix sont nets, en euros ; le montant final à payer est affiché avant la confirmation du paiement.",
+            text: "Les produits et prestations sont commercialisés à prix fixes, affichés en euros (EUR, €) sur la page « Tarifs » du présent site. Le catalogue couvre quatre familles : guides et outils digitaux (de 9 € à 69 €), formations en ligne (de 49 € à 349 €), certifications (de 95 € à 390 €) et prestations de conseil et accompagnement (de 65 € à 650 €). Tous les prix sont nets, en euros ; le montant final à payer est confirmé avant le paiement.",
           },
           {
             type: "p" as const,
-            text: "La commande s'effectue par paiement en ligne depuis la page « Paiement ». Le règlement est traité de manière sécurisée par notre prestataire de paiement ; Angelika Jánošíková n'a pas accès à vos données bancaires. Le paiement intégral du forfait vaut acceptation des présentes conditions générales de vente et déclenche le démarrage de la prestation commandée.",
+            text: "La commande s'effectue depuis la page « Commander » : vous constituez votre panier puis transmettez votre commande par email. Le paiement est organisé de manière sécurisée après confirmation écrite de la commande ; Angelika Jánošíková n'a pas accès à vos données bancaires. Le paiement intégral vaut acceptation des présentes conditions générales de vente et déclenche le démarrage de la prestation commandée.",
           },
           {
             type: "p" as const,
-            text: "Le contenu détaillé de chaque forfait est précisé sur la page « Tarifs ». Tout besoin hors périmètre fait l'objet d'un échange préalable et d'un accord écrit entre les parties.",
+            text: "Le contenu détaillé de chaque produit est précisé sur la page « Tarifs ». Tout besoin hors périmètre fait l'objet d'un échange préalable et d'un accord écrit entre les parties.",
           },
         ],
       },
@@ -495,7 +627,7 @@ export const fr = {
         blocks: [
           {
             type: "p" as const,
-            text: "Les prestations sont exécutées à distance et livrées sous forme numérique (sites internet, applications web, automatisations, contenus, rapports). Elles démarrent après paiement intégral du forfait. Un calendrier indicatif et le détail des livrables sont confirmés par écrit (email) avant le démarrage ; les livrables sont remis par voie électronique au fur et à mesure de l'avancement.",
+            text: "Les prestations sont exécutées à distance et livrées sous forme numérique (sites internet, applications web, automatisations, contenus, rapports). Elles démarrent après validation et paiement intégral de la commande. Un calendrier indicatif et le détail des livrables sont confirmés par écrit (email) avant le démarrage ; les livrables sont remis par voie électronique au fur et à mesure de l'avancement.",
           },
         ],
       },
@@ -504,7 +636,7 @@ export const fr = {
         blocks: [
           {
             type: "p" as const,
-            text: "Le paiement est traité de manière sécurisée par notre prestataire de paiement ; vos données bancaires sont saisies directement sur la plateforme de paiement et ne transitent jamais par nos serveurs. Un reçu vous est envoyé par email après chaque paiement. Aucun abonnement n'est proposé : chaque commande fait l'objet d'un paiement unique.",
+            text: "La commande est transmise par email. Les modalités de paiement sont communiquées après confirmation de la commande. Aucune donnée bancaire ne doit être envoyée par email.",
           },
         ],
       },
@@ -544,7 +676,7 @@ export const fr = {
           },
           {
             type: "p" as const,
-            text: "Les livrables produits dans le cadre d'un forfait (code, contenus, configurations) sont cédés au client pour l'exploitation de son activité, à réception du paiement intégral.",
+            text: "Les livrables produits dans le cadre d'une commande (code, contenus, configurations) sont cédés au client pour l'exploitation de son activité, à réception du paiement intégral.",
           },
         ],
       },
@@ -594,7 +726,7 @@ export const fr = {
             type: "ul" as const,
             items: [
               "Formulaire de contact : votre nom, votre adresse email et le contenu de votre message.",
-              "Paiement : les informations de paiement sont collectées et traitées directement par notre prestataire de paiement. Nous recevons la confirmation du paiement et votre email, mais nous ne stockons aucune donnée bancaire.",
+              "Commande : les informations de commande sont transmises par email. N'envoyez aucune donnée bancaire par email.",
               "Communication par email : l'historique de nos échanges avec vous.",
             ],
           },
@@ -628,7 +760,7 @@ export const fr = {
           {
             type: "ul" as const,
             items: [
-              "Prestataire de paiement : traitement des paiements en ligne.",
+              "Messagerie : traitement des demandes de commande par email.",
               "Rapidenet Canada : hébergement du site.",
             ],
           },
@@ -648,7 +780,7 @@ export const fr = {
         blocks: [
           {
             type: "p" as const,
-            text: "Nous appliquons des mesures techniques et organisationnelles raisonnables pour protéger vos données : chiffrement HTTPS de l'ensemble du site, traitement des paiements par un prestataire spécialisé et absence totale de stockage de données bancaires. L'accès aux données que nous détenons (emails de contact, confirmations de commande) est limité aux personnes qui en ont besoin pour traiter vos demandes.",
+            text: "Nous appliquons des mesures techniques et organisationnelles raisonnables pour protéger vos données. Le site ne collecte pas de données bancaires. L'accès aux données que nous détenons (emails de contact, confirmations de commande) est limité aux personnes qui en ont besoin pour traiter vos demandes.",
           },
         ],
       },
@@ -657,7 +789,7 @@ export const fr = {
         blocks: [
           {
             type: "p" as const,
-            text: "Nos prestataires de paiement et Rapidenet Canada traitent certaines données depuis les États-Unis. Ces transferts sont encadrés par les mécanismes contractuels prévus par ces prestataires (notamment les clauses contractuelles types et leurs programmes de conformité) afin d'assurer un niveau de protection adapté.",
+            text: "Les informations relatives aux transferts internationaux dépendent des prestataires utilisés. Pour toute question, contactez-nous par email.",
           },
         ],
       },
@@ -702,7 +834,7 @@ export const fr = {
             type: "ul" as const,
             items: [
               "votre nom et l'adresse email utilisée lors du paiement ;",
-              "le forfait concerné et la date du paiement ;",
+              "le produit concerné et la date du paiement ;",
               "si vous le souhaitez, la raison de votre demande — elle nous aide à nous améliorer.",
             ],
           },

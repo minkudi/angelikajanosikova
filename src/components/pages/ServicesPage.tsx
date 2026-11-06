@@ -18,7 +18,6 @@ export default function ServicesPage({ locale, dict }: { locale: Locale; dict: D
         {SERVICE_ORDER.map((id, i) => {
           const item = t.items[id];
           const Icon = SERVICE_ICONS[id];
-          const pkg = dict.packages[id];
           return (
             <section
               key={id}
@@ -56,8 +55,8 @@ export default function ServicesPage({ locale, dict }: { locale: Locale; dict: D
                     ))}
                   </ul>
                   <div className="mt-7 flex flex-col gap-3 border-t border-zinc-100 pt-6 sm:flex-row">
-                    <Link href={`${href("payment", locale)}?package=${id}`} className="btn btn-dark flex-1">
-                      {pkg.name} — {dict.pricing.choose}
+                    <Link href={href("pricing", locale)} className="btn btn-dark flex-1">
+                      {item.packageRef}
                     </Link>
                     <Link href={href("contact", locale)} className="btn btn-ghost flex-1">
                       {t.cta.button}

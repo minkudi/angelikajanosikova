@@ -1,7 +1,11 @@
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/fr";
-import { PACKAGES, type PackageId } from "@/lib/packages";
+import {
+  PACKAGES,
+  type CategoryId,
+  type PackageId,
+} from "@/lib/packages";
 import { formatPrice } from "@/lib/format";
 
 // En-tête de section réutilisable.
@@ -65,25 +69,23 @@ export function PageHero({
 export type PackageView = {
   id: PackageId;
   amount: number;
+  category: CategoryId;
   name: string;
   tagline: string;
   priceLabel: string;
-  periodLabel?: string;
-  features: readonly string[];
 };
 
-// Les 4 forfaits enrichis des libellés localisés et du prix formaté.
+// Le catalogue complet (37 produits) enrichi des libellés localisés et du prix formaté.
 export function packagesView(locale: Locale, dict: Dictionary): PackageView[] {
   return PACKAGES.map((p) => {
     const copy = dict.packages[p.id];
     return {
       id: p.id,
       amount: p.amount,
+      category: p.category,
       name: copy.name,
       tagline: copy.tagline,
       priceLabel: formatPrice(locale, p.amount),
-      periodLabel: "period" in copy ? (copy.period as string) : undefined,
-      features: copy.features,
     };
   });
 }

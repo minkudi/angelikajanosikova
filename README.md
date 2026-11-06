@@ -6,7 +6,7 @@ construit avec Next.js (App Router), hébergé sur Vercel.
 
 - Exploitation : Žihárec 209, 925 83 Žihárec, Slovaquie
 - IČO : 57 935 092 (registre des sociétés slovaque)
-- Contact : contact@angelikajanosikova.com *(à adapter si besoin — `src/lib/site.ts`)*
+- Contact : contact@angelikajanosikova.com (`src/lib/site.ts`)
 - Domaine cible : https://www.angelikajanosikova.com *(à confirmer — `src/lib/site.ts`)*
 
 ## Stack
@@ -14,9 +14,8 @@ construit avec Next.js (App Router), hébergé sur Vercel.
 - **Next.js 16** (App Router, TypeScript, Turbopack) + **Tailwind CSS v4**
 - **i18n maison** : dictionnaires FR/EN dans `src/lib/i18n/`, URLs localisées
   (`/fr/tarifs`, `/en/pricing`…), détection de langue par cookie + `Accept-Language`
-- **Paiement en ligne** : le processeur de paiement sera intégré prochainement.
-  D'ici là, le bouton de paiement affiche un bandeau « Paiement en cours d'activation »
-  avec l'email de contact.
+- **Commande** : le panier prépare un email à envoyer au contact du site.
+  Le paiement en ligne reste désactivé en attendant un nouveau prestataire.
 - **Nodemailer** (SMTP) pour le formulaire de contact
 - Déploiement : **Vercel**
 
@@ -79,8 +78,8 @@ src/
 
 ## Pages
 
-Accueil · Services (4 offres) · Tarifs (4 forfaits à prix fixes) · Paiement
-(en cours d'activation) · Contact (formulaire + coordonnées) · À propos (corporate) ·
+Accueil · Services web · Catalogue de 37 produits et prestations · Commande par email ·
+Contact (formulaire + coordonnées) · À propos (corporate) ·
 Mentions légales & CGV · Politique de confidentialité · Politique de remboursement
 (14 jours).
 
@@ -96,11 +95,11 @@ Mentions légales & CGV · Politique de confidentialité · Politique de rembour
 
 ## À compléter plus tard
 
-- **Email** : `contact@angelikajanosikova.com` est une proposition — si l'adresse
-  réelle diffère, la changer dans `src/lib/site.ts` et `src/lib/smtp.ts`.
+- **Email du formulaire** : configurer `CONTACT_TO=contact@angelikajanosikova.com`
+  avec les variables SMTP de votre hébergeur.
 - **Numéro WhatsApp** : le renseigner dans `src/lib/site.ts` (`whatsappNumber`)
   pour afficher le bouton flottant.
-- **Textes des forfaits** : le détail des prestations incluses est éditable dans
-  `src/lib/i18n/fr.ts` et `en.ts` (`packages.*.features`).
+- **Textes du catalogue** : les noms et descriptions sont éditables dans
+  `src/lib/i18n/fr.ts` et `en.ts` ; les prix sont dans `src/lib/packages.ts`.
 - **Processeur de paiement** : une fois choisi, mettre à jour `src/app/api/checkout/route.ts`
   et réintégrer les variables d'environnement nécessaires.

@@ -6,14 +6,14 @@ export const en: Dictionary = {
     siteName: "Angelika Jánošíková",
     tagline: "Web development & digital marketing agency",
     siteDescription:
-      "Angelika Jánošíková builds e-commerce websites, web applications and automation tools, and runs your digital marketing. Fixed-price packages, secure checkout.",
+      "Angelika Jánošíková builds e-commerce websites, web applications and automation tools, and runs your digital marketing. Explore our catalogue and published prices.",
   },
 
   nav: {
     home: "Home",
     services: "Services",
     pricing: "Pricing",
-    payment: "Payment",
+    payment: "Order",
     about: "About",
     contact: "Contact",
     cta: "Start a project",
@@ -30,7 +30,7 @@ export const en: Dictionary = {
     legalTitle: "Legal information",
     contactTitle: "Contact",
     addressLabel: "Address",
-    paymentsNote: "Payments secured.",
+    paymentsNote: "Orders by email.",
     // Optional footer legal line (empty = not displayed).
     legalLine: "Angelika Jánošíková — sole proprietorship (živnosť), IČO 57 935 092, Slovakia.",
     rights: "All rights reserved.",
@@ -39,7 +39,7 @@ export const en: Dictionary = {
   cart: {
     menuLabel: "Cart",
     title: "Your cart",
-    empty: "Your cart is empty. Add a package to get your project started.",
+    empty: "Your cart is empty. Add a product to get started.",
     add: "Add to cart",
     added: "Added to cart",
     quantity: "Quantity",
@@ -48,8 +48,14 @@ export const en: Dictionary = {
     remove: "Remove from cart",
     clear: "Clear cart",
     total: "Total",
-    checkout: "Proceed to checkout",
-    checkingOut: "Redirecting to checkout…",
+    checkout: "Order by email",
+    checkingOut: "Opening your email app…",
+    orderSubject: "Order — Angelika Jánošíková",
+    orderGreeting: "Hello,",
+    orderIntro: "I would like to order the following products:",
+    orderTotalLabel: "Order total",
+    orderOutro:
+      "Please confirm availability and payment instructions.",
   },
 
   whatsapp: {
@@ -63,47 +69,162 @@ export const en: Dictionary = {
     back: "Back to home",
   },
 
+  // ——— Product catalogue (shared: home, pricing, payment) ———
   packages: {
-    boutique: {
-      name: "Essential Store",
-      tagline: "Turnkey e-commerce website",
-      features: [
-        "Complete online store: catalog, cart, online payments",
-        "Custom responsive design (mobile / tablet / desktop)",
-        "Simple dashboard to manage your products and orders",
-        "Basic SEO and guided launch",
-      ],
+    // Guides & digital tools
+    "guide-strategie-digitale": {
+      name: "Digital Strategy Guide for SMEs",
+      tagline: "Everything you need to digitalize your business, step by step.",
     },
-    app: {
-      name: "Custom App",
-      tagline: "A web application built for you",
-      features: [
-        "Custom web application built from your specifications",
-        "User accounts, roles and admin area",
-        "Database, API and third-party integrations (payments, email…)",
-        "Full testing and onboarding documentation",
-      ],
+    "checklist-gestion-administrative": {
+      name: "Administrative Management Checklist",
+      tagline: "The control list that puts your internal operations back in order.",
     },
-    flux: {
-      name: "Automated Flows",
-      tagline: "Automation & data processing",
-      features: [
-        "Audit of your processes and identification of quick wins",
-        "Automation of repetitive tasks across your tools",
-        "Pipelines to collect, clean and process your data",
-        "Automatically generated dashboards and reports",
-      ],
+    "manuel-leadership-situationnel": {
+      name: "Situational Leadership Handbook",
+      tagline: "Adapt your management style to every situation and every team.",
     },
-    croissance: {
-      name: "Digital Growth",
-      tagline: "Digital marketing — six-month package",
-      period: "6 months of service",
-      features: [
-        "Digital strategy and 6-month action plan",
-        "Online advertising campaigns (search and social media)",
-        "SEO optimization of your website and content",
-        "Social media management and monthly reporting",
-      ],
+    "analyse-swot": {
+      name: "Simplified SWOT Analysis",
+      tagline: "The template and method to run your own strategic diagnosis.",
+    },
+    "templates-factures": {
+      name: "5 Professional Invoice Templates",
+      tagline: "Five templates to prepare professional invoices.",
+    },
+    "plan-marketing-12-mois": {
+      name: "12-Month Marketing Plan",
+      tagline: "A turnkey marketing action calendar for the whole year.",
+    },
+    "pack-outils-excel": {
+      name: "Excel Financial Management Pack",
+      tagline: "Ready-to-use workbooks to keep your numbers under control.",
+    },
+    "strategie-reseaux-b2b": {
+      name: "B2B Social Media Strategy",
+      tagline: "The complete guide to building a B2B presence that generates leads.",
+    },
+
+    // Online trainings
+    "formation-projet-agile": {
+      name: "Agile Project Management Training",
+      tagline: "Master agile methodologies, from theory to practice.",
+    },
+    "webinaire-communication-crise": {
+      name: "Crisis Communication Webinar",
+      tagline: "Explore the principles of communication during a crisis.",
+    },
+    "module-rh-digitale": {
+      name: "Digital HR Module",
+      tagline: "Automate your HR processes, from recruitment to reporting.",
+    },
+    "programme-lean-management": {
+      name: "Lean Management Program",
+      tagline: "The fundamentals to eliminate waste and streamline operations.",
+    },
+    "atelier-planification-strategique": {
+      name: "Strategic Planning Workshop",
+      tagline: "An interactive session to build your plan for the year.",
+    },
+    "master-class-negociation": {
+      name: "Commercial Negotiation Master Class",
+      tagline: "Advanced negotiation techniques, in an intensive format.",
+    },
+    "culture-entreprise": {
+      name: "Coherent Company Culture",
+      tagline: "A three-month program to instill a strong, lasting culture.",
+    },
+    "formation-gestion-crise": {
+      name: "Crisis Management Training",
+      tagline: "Prepare for and handle any critical situation, end to end.",
+    },
+    "programme-leader-inclusif": {
+      name: "Responsible & Inclusive Leader Program",
+      tagline: "A certified training on leadership that means something.",
+    },
+    "formation-supply-chain": {
+      name: "Supply Chain & Logistics Training",
+      tagline: "A complete master class on optimizing your logistics chain.",
+    },
+    "master-leadership": {
+      name: "Transformational Leadership Master",
+      tagline: "Fourteen hours of intensive curriculum to lead change.",
+    },
+
+    // Certifications
+    "certification-okr": {
+      name: "OKR Method Certification",
+      tagline: "The certified training on Objectives and Key Results.",
+    },
+    "certification-iso-9001": {
+      name: "ISO 9001 Quality Certification",
+      tagline: "Understand and implement ISO 9001 in your company.",
+    },
+    "certification-agile-master": {
+      name: "Agile Master Certification",
+      tagline: "The professional certification in advanced agile project management.",
+    },
+    "certification-manager": {
+      name: "Business Manager Certification",
+      tagline: "A program covering strategy, finance, HR and operations.",
+    },
+
+    // Consulting & support
+    "audit-interne-processus": {
+      name: "Internal Process Audit",
+      tagline: "A complete analysis of your internal workflows and their gaps.",
+    },
+    "diagnostic-strategique": {
+      name: "Custom Strategic Diagnostic",
+      tagline: "A half-day consultation to assess your real position.",
+    },
+    "coaching-management-individuel": {
+      name: "Individual Management Coaching",
+      tagline: "Three one-hour sessions to grow your skills as a manager.",
+    },
+    "audit-conformite-rgpd": {
+      name: "GDPR Compliance Audit",
+      tagline: "A complete diagnostic of your personal-data compliance.",
+    },
+    "consulting-restructuration": {
+      name: "Organizational Restructuring Consulting",
+      tagline: "Rethink your internal structure, roles and responsibilities.",
+    },
+    "programme-transformation-digitale": {
+      name: "Bespoke Digital Transformation Program",
+      tagline: "Four months of tailored program for your digital transition.",
+    },
+    "coaching-equipe": {
+      name: "Intensive Team Coaching",
+      tagline: "Six sessions to grow your team's collective performance.",
+    },
+    "strategie-marque": {
+      name: "Brand Strategy & Positioning",
+      tagline: "Clarify and assert your brand to be chosen, not just seen.",
+    },
+    "consulting-expansion": {
+      name: "International Expansion Consulting",
+      tagline: "Expert support to enter new markets with confidence.",
+    },
+    "transformation-processus-finance": {
+      name: "Finance Process Transformation",
+      tagline: "Modernize and automate your financial processes end to end.",
+    },
+    "strategie-e-commerce": {
+      name: "E-commerce & Digital Transformation Strategy",
+      tagline: "Complete consulting to launch or transform your online business.",
+    },
+    "consulting-fusions": {
+      name: "Mergers & Acquisitions Consulting",
+      tagline: "Evaluate, structure and integrate your acquisition safely.",
+    },
+    "programme-transformation-organisationnelle": {
+      name: "Organizational Transformation Program",
+      tagline: "Six months to transform your organization in depth.",
+    },
+    "audit-strategique-complet": {
+      name: "Complete Business Strategy Audit",
+      tagline: "Two weeks of in-depth audit to assess your competitiveness. Our flagship offer.",
     },
   },
 
@@ -111,7 +232,7 @@ export const en: Dictionary = {
     meta: {
       title: "Angelika Jánošíková — Web development & digital marketing agency",
       description:
-        "E-commerce sites, web applications, automation and digital marketing. Fixed, published prices, secure payments, 14-day refund policy.",
+        "E-commerce sites, web applications, automation and digital marketing. Explore our catalogue and contact us by email.",
     },
     hero: {
       eyebrow: "Web development & digital marketing agency",
@@ -119,10 +240,10 @@ export const en: Dictionary = {
       titleAccent: "that grow",
       titleB: "your business.",
       subtitle:
-        "Angelika Jánošíková designs and builds e-commerce websites, custom web applications, automation tools and digital marketing campaigns. Clear packages, careful execution, secure payments.",
-      ctaPrimary: "See our packages",
+        "Angelika Jánošíková designs and builds e-commerce websites, custom web applications, automation tools and digital marketing campaigns — and offers a catalogue of guides, trainings and support programs to grow your business. Clear prices, careful execution.",
+      ctaPrimary: "Browse the catalogue",
       ctaSecondary: "Contact us",
-      badges: ["Secure payment", "14-day refund policy"],
+      badges: ["Order by email", "14-day refund policy"],
     },
     chipsTitle: "What we master",
     chips: [
@@ -148,7 +269,7 @@ export const en: Dictionary = {
       items: [
         {
           title: "Public, firm prices",
-          desc: "Our packages are published with their price: you know exactly what you pay before you even write to us.",
+          desc: "Our products are published with their price: you know exactly what you pay before you even write to us.",
         },
         {
           title: "Engineer-grade execution",
@@ -160,7 +281,7 @@ export const en: Dictionary = {
         },
         {
           title: "14-day commitment",
-          desc: "Every package is covered by our full 14-day refund policy.",
+          desc: "Every product is covered by our full 14-day refund policy.",
         },
       ],
     },
@@ -173,8 +294,8 @@ export const en: Dictionary = {
           desc: "You write to us, we discuss your goals and define the scope together.",
         },
         {
-          title: "Package",
-          desc: "You pick the matching package: fixed price, written scope, no bad surprises.",
+          title: "Order",
+          desc: "You pick the matching products: published prices, written scope, no bad surprises.",
         },
         {
           title: "Build",
@@ -187,15 +308,15 @@ export const en: Dictionary = {
       ],
     },
     pricingTeaser: {
-      eyebrow: "Packages",
+      eyebrow: "Catalogue",
       title: "Clear prices, published upfront.",
       subtitle:
-        "Four packages covering the digital essentials, payable online with complete security. Every package comes with a written scope.",
-      cta: "See all pricing",
+        "Guides and digital tools, trainings, certifications and support: everything is published, from the €9 mini tool to the €650 complete strategic audit.",
+      cta: "See the whole catalogue",
     },
     cta: {
       title: "Have a project in mind?",
-      text: "Tell us what you need: we come back to you with a clear proposal and a matching package.",
+      text: "Tell us what you need: we come back to you with a clear proposal and a matching product.",
       button: "Start a project",
     },
   },
@@ -225,7 +346,7 @@ export const en: Dictionary = {
           "SEO best practices and performance from day one",
           "Training on running your store",
         ],
-        packageRef: "Related package: Essential Store",
+        packageRef: "See the catalogue and pricing",
       },
       app: {
         title: "Web applications",
@@ -239,7 +360,7 @@ export const en: Dictionary = {
           "Testing, QA and onboarding documentation",
           "Code you remain free to evolve",
         ],
-        packageRef: "Related package: Custom App",
+        packageRef: "See the catalogue and pricing",
       },
       flux: {
         title: "Automation & data processing",
@@ -253,7 +374,7 @@ export const en: Dictionary = {
           "Automatic dashboards and reports",
           "Monitoring and maintenance of delivered flows",
         ],
-        packageRef: "Related package: Automated Flows",
+        packageRef: "See the catalogue and pricing",
       },
       croissance: {
         title: "Digital marketing",
@@ -267,7 +388,7 @@ export const en: Dictionary = {
           "Consistent social media management",
           "Clear, results-driven monthly reporting",
         ],
-        packageRef: "Related package: Digital Growth (six-month)",
+        packageRef: "See the catalogue and pricing",
       },
     },
     cta: { text: "A need that fits none of these boxes?", button: "Let's discuss it" },
@@ -275,57 +396,69 @@ export const en: Dictionary = {
 
   pricing: {
     meta: {
-      title: "Pricing — Fixed-price packages",
+      title: "Pricing — Guides, trainings, certifications and consulting",
       description:
-        "Angelika Jánošíková packages: Essential Store (€1,200), Custom App (€2,200), Automated Flows (€3,800), Digital Growth (€1,800 / six months). One-time secure payment.",
+        "The Angelika Jánošíková catalogue: guides and digital tools from €9, online trainings, certifications and consulting up to €650. Prices displayed in euros.",
     },
     hero: {
       eyebrow: "Pricing",
-      title: "Four packages, four fixed prices.",
+      title: "A whole catalogue, published prices.",
       subtitle:
-        "No opaque quotes, no blindly billed hours: you pick a package, you know the price and the scope. That's it.",
+        "No opaque quotes, no blindly billed hours: every product has a public price and a written scope. You order by email, we confirm and we start.",
     },
     included: "What's included",
-    choose: "Choose this package",
-    periodSemestrial: "six-month package",
+    choose: "Order",
+    fromPrice: "from",
+    categories: {
+      guides: {
+        name: "Guides & digital tools",
+        tagline: "Ready-to-use resources you can apply as early as this week.",
+      },
+      formations: {
+        name: "Online trainings",
+        tagline: "Practical curricula to level up at your own pace.",
+      },
+      certifications: {
+        name: "Certifications",
+        tagline: "Training and certification programs to develop your skills.",
+      },
+      conseil: {
+        name: "Consulting & support",
+        tagline: "Tailored services, from the diagnostic to the full transformation.",
+      },
+    },
     guarantee: {
       title: "Money-back guarantee — 14 days",
       text: "Every payment is covered by our refund policy: a simple email within 14 days is enough, the refund is full and processed to your original payment method.",
       link: "Read the refund policy",
     },
     paymentNote:
-      "All prices are displayed in euros (EUR, €). One-time payment, secured. No subscription, no hidden fees.",
-    cta: { text: "Undecided between two packages?", button: "Ask us" },
+      "All prices are displayed in euros (EUR, €). No subscription, no hidden fees.",
+    cta: { text: "Undecided between two products?", button: "Ask us" },
   },
 
   payment: {
     meta: {
-      title: "Payment — Pay for your packages online",
+      title: "Order — Digital products, trainings and consulting",
       description:
-        "Pay for your packages online securely. Prices in euros (EUR), one-time payment, card data handled directly by our payment provider.",
+        "Build your cart and send your order by email. Prices in euros (EUR); payment instructions provided after confirmation.",
     },
     hero: {
-      eyebrow: "Payment",
-      title: "Pay for your packages securely.",
+      eyebrow: "Order",
+      title: "Three steps, no surprises.",
       subtitle:
-        "Add one or more packages to your cart and pay for everything at once — no subscription, no hidden fees. Online payment will be live very soon.",
+        "Add your products to the cart, then send your order by email: we confirm availability and payment instructions, and we get started.",
     },
     steps: [
-      "Choose your packages",
-      "Pay securely online",
-      "We start your project",
+      "Choose your products",
+      "Send your order by email",
+      "We confirm and start",
     ],
-    cardsNote: "Accepted cards: Visa, Mastercard, American Express.",
+    emailNote:
+      "Your order opens in your email app: send the email to forward it to us, and we reply with the payment instructions.",
     securityNote:
-      "Your card details are entered directly on the secure payment platform and never touch our servers. A receipt is sent to you by email.",
-    success:
-      "Payment confirmed — thank you! Your order is registered and we will contact you to start your project.",
-    canceled: "Payment canceled. Your cart has been kept, you can try again whenever you like.",
-    notConfiguredTitle: "Online payment is being activated",
-    notConfigured:
-      "Online payment will be live very soon. To order right away, write to us:",
-    error: "Something went wrong while creating the payment session. Please try again in a moment.",
-    vatNote: "Net prices in euros (EUR), one-time payment.",
+      "Do not send card details by email. Payment instructions will be provided after confirmation.",
+    vatNote: "Net prices in euros (EUR).",
   },
 
   contact: {
@@ -381,7 +514,7 @@ export const en: Dictionary = {
     mission: {
       eyebrow: "Our mission",
       title: "Putting technology to work for your growth.",
-      text: "Small and medium businesses cannot always afford an in-house technical team. Our role: give them access to the same quality of tools and execution as the big players — with fixed-price packages and a direct relationship, without layers of middlemen.",
+      text: "Small and medium businesses cannot always afford an in-house technical team. Our role: give them access to the same quality of tools and execution as the big players — with published fixed prices and a direct relationship, without layers of middlemen.",
     },
     axes: {
       eyebrow: "What we focus on",
@@ -422,7 +555,7 @@ export const en: Dictionary = {
         { label: "Legal name", value: "Angelika Jánošíková" },
         { label: "Contact", value: "contact@angelikajanosikova.com" },
         { label: "Activity", value: "Web development and digital marketing" },
-        { label: "Payment", value: "Secure one-time payment" },
+        { label: "Order", value: "By email" },
       ],
     },
     cta: { title: "Let's work together.", button: "Contact us" },
@@ -473,15 +606,15 @@ export const en: Dictionary = {
         blocks: [
           {
             type: "p" as const,
-            text: "Services are sold as fixed-price packages, described and displayed in euros (EUR, €) on the “Pricing” page of this website: Essential Store (€1,200), Custom App (€2,200), Automated Flows (€3,800) and Digital Growth (€1,800, a six-month package covering six months of service). All prices are net, in euros; the final amount to pay is displayed before payment is confirmed.",
+            text: "Products and services are sold at fixed prices, displayed in euros (EUR, €) on the “Pricing” page of this website. The catalogue covers four families: guides and digital tools (€9 to €69), online trainings (€49 to €349), certifications (€95 to €390) and consulting services (€65 to €650). All prices are net, in euros; the final amount to pay is confirmed before payment.",
           },
           {
             type: "p" as const,
-            text: "Orders are placed through online payment from the “Payment” page. Payment is processed securely by our payment provider; Angelika Jánošíková has no access to your card details. Full payment of the package constitutes acceptance of these terms of service and triggers the start of the ordered service.",
+            text: "Orders are placed from the “Order” page: you build your cart and then forward your order by email. Payment is arranged securely after written confirmation of the order; Angelika Jánošíková has no access to your card details. Full payment constitutes acceptance of these terms of service and triggers the start of the ordered service.",
           },
           {
             type: "p" as const,
-            text: "The detailed content of each package is specified on the “Pricing” page. Any need outside this scope is subject to a prior discussion and a written agreement between the parties.",
+            text: "The detailed content of each product is specified on the “Pricing” page. Any need outside this scope is subject to a prior discussion and a written agreement between the parties.",
           },
         ],
       },
@@ -490,7 +623,7 @@ export const en: Dictionary = {
         blocks: [
           {
             type: "p" as const,
-            text: "Services are performed remotely and delivered digitally (websites, web applications, automations, content, reports). Work starts after full payment of the package. An indicative timeline and the detail of deliverables are confirmed in writing (email) before the start; deliverables are provided electronically as the project progresses.",
+            text: "Services are performed remotely and delivered digitally (websites, web applications, automations, content, reports). Work starts after the order is validated and paid in full. An indicative timeline and the detail of deliverables are confirmed in writing (email) before the start; deliverables are provided electronically as the project progresses.",
           },
         ],
       },
@@ -499,7 +632,7 @@ export const en: Dictionary = {
         blocks: [
           {
             type: "p" as const,
-            text: "Payments are processed securely by our payment provider; your card details are entered directly on the payment platform and never touch our servers. A receipt is sent to you by email after each payment. No subscription is offered: every order is a one-time payment.",
+            text: "Orders are sent by email. Payment instructions are provided after order confirmation. Please do not send card details by email.",
           },
         ],
       },
@@ -539,7 +672,7 @@ export const en: Dictionary = {
           },
           {
             type: "p" as const,
-            text: "Deliverables produced under a package (code, content, configurations) are transferred to the client for the operation of their business, upon receipt of full payment.",
+            text: "Deliverables produced under an order (code, content, configurations) are transferred to the client for the operation of their business, upon receipt of full payment.",
           },
         ],
       },
@@ -589,7 +722,7 @@ export const en: Dictionary = {
             type: "ul" as const,
             items: [
               "Contact form: your name, your email address and the content of your message.",
-              "Payments: payment information is collected and processed directly by our payment provider. We receive the payment confirmation and your email, but we do not store any card data.",
+              "Orders: order details are sent by email. Do not send card data by email.",
               "Email communication: the history of our exchanges with you.",
             ],
           },
@@ -623,7 +756,7 @@ export const en: Dictionary = {
           {
             type: "ul" as const,
             items: [
-              "Payment provider: online payment processing.",
+              "Email services: processing order requests by email.",
               "Rapidenet Canada: website hosting.",
             ],
           },
@@ -643,7 +776,7 @@ export const en: Dictionary = {
         blocks: [
           {
             type: "p" as const,
-            text: "We apply reasonable technical and organizational measures to protect your data: HTTPS encryption across the whole website, payment processing by a specialized provider and no storage of card data whatsoever. Access to the data we hold (contact emails, order confirmations) is limited to the people who need it to handle your requests.",
+            text: "We apply reasonable technical and organizational measures to protect your data. This website does not collect card data. Access to the data we hold (contact emails, order confirmations) is limited to the people who need it to handle your requests.",
           },
         ],
       },
@@ -652,7 +785,7 @@ export const en: Dictionary = {
         blocks: [
           {
             type: "p" as const,
-            text: "Our payment providers and Rapidenet Canada process some data from the United States. These transfers are governed by the contractual mechanisms put in place by these providers (including standard contractual clauses and their compliance programs) to ensure an adequate level of protection.",
+            text: "Information about international data transfers depends on the providers used. Please contact us by email with any questions.",
           },
         ],
       },
@@ -697,7 +830,7 @@ export const en: Dictionary = {
             type: "ul" as const,
             items: [
               "your name and the email address used for the payment;",
-              "the package concerned and the payment date;",
+              "the product concerned and the payment date;",
               "optionally, the reason for your request — it helps us improve.",
             ],
           },

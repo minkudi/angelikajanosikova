@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/fr";
 import { formatPrice } from "@/lib/format";
@@ -29,14 +29,13 @@ export default function CartDrawer({
   contactEmail: string;
 }) {
   const cart = useCart();
-  const [checkingOut, setCheckingOut] = useState(false);
-  const [error, setError] = useState<"error" | "not_configured" | null>(null);
+  const { isOpen, closeCart } = cart;
 
   // Échap pour fermer + verrouille le défilement de la page quand ouvert.
   useEffect(() => {
-    if (!cart.isOpen) return;
+    if (!isOpen) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") cart.closeCart();
+      if (e.key === "Escape") closeCart();
     };
     window.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
@@ -44,37 +43,14 @@ export default function CartDrawer({
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
     };
-  }, [cart.isOpen, cart.closeCart]);
+  }, [isOpen, closeCart]);
 
-  async function checkout() {
-    setError(null);
-    setCheckingOut(true);
-    try {
-      const res = await fetch("/api/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          items: cart.items.map((it) => ({ packageId: it.id, quantity: it.qty })),
-          locale,
-        }),
-      });
-      const data: { url?: string; error?: string } | null = await res
-        .json()
-        .catch(() => null);
-      if (res.ok && data?.url) {
-        window.location.href = data.url;
-        return; // redirection vers le prestataire de paiement
-      }
-      setError(
-        res.status === 503 || data?.error === "payment_not_configured"
-          ? "not_configured"
-          : "error",
-      );
-    } catch {
-      setError("error");
-    }
-    setCheckingOut(false);
-  }
+  const lines = cart.items.flatMap((item) => {
+    const pkg = packages.find((product) => product.id === item.id);
+    return pkg ? [`- ${pkg.name} × ${item.qty} = ${formatPrice(locale, pkg.amount * item.qty)}`] : [];
+  });
+  const body = [cartCopy.orderGreeting, "", cartCopy.orderIntro, ...lines, "", `${cartCopy.orderTotalLabel}: ${formatPrice(locale, cart.totalCents)}`, "", cartCopy.orderOutro].join("\n");
+  const orderHref = `mailto:${contactEmail}?subject=${encodeURIComponent(cartCopy.orderSubject)}&body=${encodeURIComponent(body)}`;
 
   return (
     <>
@@ -110,26 +86,6 @@ export default function CartDrawer({
         </header>
 
         <div className="flex-1 overflow-y-auto px-6 py-5">
-          {error === "error" && (
-            <p className="mb-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">
-              {paymentCopy.error}
-            </p>
-          )}
-          {error === "not_configured" && (
-            <div className="mb-5 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
-              <p className="font-semibold">{paymentCopy.notConfiguredTitle}</p>
-              <p className="mt-1">
-                {paymentCopy.notConfigured}{" "}
-                <a
-                  href={`mailto:${contactEmail}`}
-                  className="font-semibold underline underline-offset-2"
-                >
-                  {contactEmail}
-                </a>
-              </p>
-            </div>
-          )}
-
           {cart.items.length === 0 ? (
             <p className="text-sm text-zinc-500">{cartCopy.empty}</p>
           ) : (
@@ -200,14 +156,9 @@ export default function CartDrawer({
               </span>
             </div>
             <div className="mt-4 flex gap-3">
-              <button
-                type="button"
-                onClick={checkout}
-                disabled={checkingOut}
-                className="btn btn-primary flex-1 py-3"
-              >
-                {checkingOut ? cartCopy.checkingOut : cartCopy.checkout}
-              </button>
+              <a href={orderHref} className="btn btn-primary flex-1 py-3">
+                {cartCopy.checkout}
+              </a>
               <button type="button" onClick={cart.clear} className="btn btn-ghost">
                 {cartCopy.clear}
               </button>

@@ -3,7 +3,7 @@ import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/fr";
 import { href } from "@/lib/i18n/routes";
 import { formatPrice } from "@/lib/format";
-import { PACKAGES } from "@/lib/packages";
+import { CATEGORY_ORDER, categoryMinAmount } from "@/lib/packages";
 import {
   ArrowRightIcon,
   CheckIcon,
@@ -150,12 +150,12 @@ export default function HomePage({ locale, dict }: { locale: Locale; dict: Dicti
             dark
           />
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {PACKAGES.map((p, i) => {
-              const copy = dict.packages[p.id];
+            {CATEGORY_ORDER.map((category, i) => {
+              const copy = dict.pricing.categories[category];
               return (
                 <Link
-                  key={p.id}
-                  href={href("payment", locale)}
+                  key={category}
+                  href={`${href("pricing", locale)}#${category}`}
                   data-reveal
                   style={{ transitionDelay: `${i * 80}ms` }}
                   className="group rounded-2xl border border-white/10 bg-white/[0.06] p-6 backdrop-blur-sm transition-colors hover:border-white/25 hover:bg-white/[0.09]"
@@ -163,7 +163,7 @@ export default function HomePage({ locale, dict }: { locale: Locale; dict: Dicti
                   <h3 className="font-display text-base font-bold text-white">{copy.name}</h3>
                   <p className="mt-1.5 text-xs text-zinc-400">{copy.tagline}</p>
                   <p className="mt-5 font-display text-2xl font-bold text-white">
-                    {formatPrice(locale, p.amount)}
+                    {dict.pricing.fromPrice} {formatPrice(locale, categoryMinAmount(category))}
                   </p>
                   <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent-light">
                     {dict.pricing.choose}

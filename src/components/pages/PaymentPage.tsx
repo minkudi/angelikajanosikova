@@ -1,6 +1,5 @@
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/fr";
-import { SITE } from "@/lib/site";
 import PaymentClient from "./PaymentClient";
 import { PageHero, packagesView } from "./shared";
 
@@ -33,11 +32,10 @@ export default function PaymentPage({ locale, dict }: { locale: Locale; dict: Di
         </ol>
 
         <PaymentClient
-          locale={locale}
           copy={t}
           cartCopy={dict.cart}
+          categories={dict.pricing.categories}
           packages={packagesView(locale, dict)}
-          contactEmail={SITE.email}
         />
       </section>
     </>

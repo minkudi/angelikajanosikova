@@ -12,7 +12,7 @@ const YEAR = new Date().getFullYear();
 export default function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
 
   const serviceLinks = (["boutique", "app", "flux", "croissance"] as const).map((id) => ({
-    label: dict.packages[id].name,
+    label: dict.services.items[id].title,
     href: href("services", locale),
   }));
 
